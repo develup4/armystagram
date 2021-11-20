@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Armystagram",
+    "slug": "Armystagram",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Images/icon.png",
+    "splash": {
+      "image": "./assets/Images/splash.png",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "favicon": "./assets/Images/favicon.png"
+    },
+    "description": "",
+    "android": {
+      "package": "com.develup4.Armystagram"
+    }
+  }
+}

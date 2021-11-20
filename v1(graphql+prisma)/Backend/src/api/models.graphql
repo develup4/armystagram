@@ -1,0 +1,95 @@
+type User {
+  id: ID!
+  profile: String
+  username: String!
+  email: String!
+  password: String!
+  isMember: Boolean
+  isFollowing: Boolean!
+  followingMe: Boolean!
+  isSelf: Boolean!
+  following: [User!]!
+  followingCount: Int!
+  followers: [User!]!
+  followersCount: Int!
+  posts: [Post!]!
+  postsCount: Int!
+  likes: [Like!]!
+  comments: [Comment!]!
+  rooms: [Room!]!
+  mostLike: String
+  Secret: String!
+  createdAt: String
+  updatedAt: String
+}
+
+type Post {
+  id: ID!
+  caption: String!
+  user: User!
+  relatedMember1: String
+  relatedMember2: String
+  relatedMember3: String
+  files: [File!]!
+  comments: [Comment!]!
+  commentCount: Int!
+  likes: [Like!]!
+  isLiked: Boolean!
+  likeCount: Int!
+  hashtags: [Hashtag!]!
+  createdAt: String
+  updatedAt: String
+}
+
+type Like {
+  id: ID!
+  user: User!
+  post: Post!
+  createdAt: String
+  updatedAt: String
+}
+
+type Comment {
+  id: ID!
+  text: String!
+  byMember: Boolean
+  user: User!
+  post: Post!
+  createdAt: String
+  updatedAt: String
+}
+
+type Hashtag {
+  id: ID!
+  text: String!
+  post: Post!
+  createdAt: String
+  updatedAt: String
+}
+
+type File {
+  id: ID!
+  url: String!
+  post: Post!
+  createdAt: String
+  updatedAt: String
+}
+
+type Room {
+  id: ID!
+  withMember: Boolean
+  participants: [User!]!
+  messages: [Message!]!
+  createdAt: String
+  updatedAt: String
+}
+
+type Message {
+  id: ID!
+  text: String!
+  from: User!
+  to: User!
+  room: Room!
+  createdAt: String
+  updatedAt: String
+}
