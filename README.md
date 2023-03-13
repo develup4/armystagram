@@ -6,6 +6,16 @@
 
 사진
 
+
+![F2B1CCE3-AF8C-4D0E-8EE2-992C15C0767F_1_105_c](https://user-images.githubusercontent.com/8960704/224643782-a2810764-da4e-416c-9349-ad313d35598f.jpeg)
+
+
+앱
+
+
+![71306247-E67A-40E4-90A0-CDFFAFEF98AA_1_105_c](https://user-images.githubusercontent.com/8960704/224643815-d41951c4-13de-40d5-8d53-378245873ed3.jpeg)
+
+
 ## 미구현 항목
 
 - 
